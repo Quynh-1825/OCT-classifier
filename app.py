@@ -286,4 +286,4 @@ def predict():
         return render_template('result.html', image=file_path, trueLabel=trueLabel, filename=filename, labels=labels, outputs=outputs, predicts=predicts, predictions=predictions)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
